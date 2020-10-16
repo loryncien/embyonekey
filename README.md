@@ -65,7 +65,6 @@ https://raw.githubusercontent.com/s1oz/embyonekey/master/mb3admin.com.key.pem
 	
 ### 接下来运行这条脚本
 
-
 以root用户执行命令：<br/>
 </p><pre><code>wget -N --no-check-certificate "https://raw.githubusercontent.com/s1oz/embyonekey/master/embyonekey.sh" && chmod +x embyonekey.sh && ./embyonekey.sh</code></pre>
 
@@ -75,7 +74,6 @@ https://raw.githubusercontent.com/s1oz/embyonekey/master/mb3admin.com.key.pem
 nginx -t
 ```
 查询是否报错
-
 ```
 curl https://mb3admin.com/admin/service/registration/validateDevice
 curl https://mb3admin.com/admin/service/registration/validateDevice/666
@@ -86,7 +84,6 @@ ssh中运行命令查看是否正确返回值
 <br/>因升级系统升级7.0 套件停用 迁移到docker版emby应急
 ```
 cp /etc/ssl/certs/ca-certificates.crt /volume1/docker/emby
-
 ```
 拷贝之前的证书信息到emby文件夹
 ```
@@ -107,28 +104,25 @@ docker run -d \
 --env UID=0\#root权限
 --env GID=0 \#root权限
 --env GIDLIST=2\#root权限
-emby/embyserver:beta #下载的emby版本
+emby/embyserver:latest #下载的emby版本
 ```
 <br/>然后启动后就跟原来的一模一样 不需要做其他调整
 #### 祝大家玩得开心
 
+<br/>在Emby Premiere中输入任何秘钥都可以激活成功
 <br/>如图,打开即可拥有会员黄标
 <br/>
-<br/>![](https://github.com/s1oz/embyonekey/blob/master/ko.png)
-<br/>
-<br/>在Emby Premiere中输入任何秘钥都可以激活成功
-<br/>
-<br/>![](https://github.com/s1oz/embyonekey/blob/master/ko1.png)
+<br/>![](https://i.loli.net/2020/10/16/e4YBa7lORjDQuwZ.jpg)
 
 #### 客户端证书安装
 如服务器正常白嫖后,客户端还是无法正确显示,一般是证书不正确,请在客户端安装证书
 ```
-https://raw.githubusercontent.com/s1oz/embyonekey/master/guomi.cer 
+https://raw.githubusercontent.com/loryncien/embyonekey/master/guomi.cer 
 ```
 下载此链接文件名为guomi.cer的证书文件后安装相应设备上
 
 Windows请安装此目录下
-<br/>![](https://github.com/s1oz/embyonekey/blob/master/window.png)
+<br/>![](https://i.loli.net/2020/10/16/qnJe27jCcRwApNM.png)
 
 <br/>IOS需要安装后在设置--通用--关于手机--证书信任设置中把证书信任
 
