@@ -117,7 +117,7 @@ emby/embyserver:latest #下载的emby版本
 #### 客户端证书安装
 如服务器正常白嫖后,客户端还是无法正确显示,一般是证书不正确,请在客户端安装证书
 ```
-https://raw.githubusercontent.com/loryncien/embyonekey/master/guomi.cer 
+https://raw.githubusercontent.com/s1oz/embyonekey/master/guomi.cer 
 ```
 下载此链接文件名为guomi.cer的证书文件后安装相应设备上
 
