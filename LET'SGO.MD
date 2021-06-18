@@ -69,6 +69,8 @@ https://raw.githubusercontent.com/loryncien/embyonekey/master/mb3admin.com.key.p
 
 <br/>运行完毕
 <br/>可以输入以下命令测试
+注意修改proxy.conf证书地址为正确的盘符/volume1
+
 ```
 nginx -t
 ```
